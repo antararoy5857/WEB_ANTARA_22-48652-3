@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+
+<head>
+    
+    <title>Registration</title>
+    <style>
+        
+        .form-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+
+        fieldset {
+            flex: 1;
+        
+        }
+
+        legend {
+            font-weight: bold ;
+           
+        }
+
+        .form-group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .label-container {
+           
+            font-weight: bold;
+          
+            display: flex;
+            
+        }
+
+        .label-text {
+            width: 100px;
+        }
+
+        
+
+        .input-container {
+            flex: 1;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            border: 1px solid #7a7a7a;
+            padding: 2px 4px;
+           
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 180px;
+        }
+
+        .file-inline {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .file-inline input[type="text"] {
+            width: 150px;
+        }
+
+        .address-box {
+            border: 1px solid #7a7a7a;
+            padding: 10px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .address-row {
+            display: flex;
+            gap: 5px;
+        }
+
+       
+
+        .address-box textarea {
+            width: 180px;
+            height: 60px;
+           
+        }
+
+        .address-box input[type="text"] {
+            width: 180px;
+        }
+
+        .register-btn {
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h2>Registration</h2>
+
+    <form>
+        <div class="form-container">
+
+            <fieldset>
+                <legend>General Information</legend>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">First Name</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Last Name</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Gender</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Father's Name</span><span
+                            class="colon">:</span></div>
+                    <div class="input-container file-inline">
+                        <input type="text">
+                        <input type="file" style="font-size: 12px;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Mother's Name</span><span
+                            class="colon">:</span></div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Blood Group</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container">
+                        <select>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Religion</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container">
+                        <select>
+                            <option>Islam</option>
+                            <option>Hinduism</option>
+                            <option>Christianity</option>
+                            <option>Buddhism</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Email</span><span class="colon">:</span></div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Phone/Mobile</span><span
+                            class="colon">:</span></div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Website</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Address</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container">
+                       <fieldset> <div
+                            style="font-size: 14px; font-weight: bold; margin-bottom: 5px; text-decoration: underline;">
+                            Present Address</div> 
+                        <div class="address-box">
+                            <div class="address-row">
+                                <select>
+                                    <option>Bangladesh</option>
+                                    <option>USA</option>
+                                     <option>UK</option>
+                                      <option>UAE</option>
+                                </select>
+                                <select>
+                                    <option>Dhaka</option>
+                                     <option>Brahmanbaria</option>
+                                      <option>Cumillah</option>
+                                       <option>Rajshahi</option>
+                                    
+                                </select>
+                            </div>
+                            <textarea placeholder="Road/Stree/City"></textarea>
+                            <input type="text" placeholder="Post Code">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Username</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container"><input type="text"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Password</span><span class="colon">:</span>
+                    </div>
+                    <div class="input-container"><input type="password"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container"><span class="label-text">Confirm Password</span><span
+                            class="colon">:</span></div>
+                    <div class="input-container"><input type="password"></div>
+                </div>
+
+                <button type="submit" class="register-btn">Register</button>
+            </fieldset>
+           
+             
+
+        </div>
+        
+    </form>
+
+</body>
+
+</html>
